@@ -1,0 +1,14 @@
+#1 The first yellow block represents the first successful attempt. After it is activated, the system is reset, and then the first two correct keys are accessed. The enter key spaces out the waves, and at the end, the system is reset again. We can observe that the system moves to state 3 and then to state 4.
+
+#2 Continuing sequentially, the system is reset, and then an incorrect password is tried, followed by a correct one. The system moves to state 1 when an error occurs, and anything entered in this state moves the system to state 2. Representing the error.
+
+#3 After resetting the system, the same procedure is followed. On correctly entering the first password, the system moves to state 3, representing the first successful attempt. However, on entering an incorrect password, the system moves back to state 2. Representing the error.
+
+#4 The system is reset again, and this test is to check if the user does not reset the system while in an error state. In this case, the user will keep trying to enter a new password, but the system will not move out of state 3 until the correct password is entered. Representing the error.
+
+#5 Finally, to test the sequential functioning of the system, the last yellow block represents a reset followed by a successful attempt to ensure that the system works sequentially.
+
+#Based on the analysis of the waveform, it appears that the variables "out" and "err" are functioning correctly. The waveform indicates successful attempts (represented by state 4) and errors (represented by state 2) based on user input. The testing of sequential functionality (represented by the last yellow block) also suggests that the system is functioning as intended.
+
+
+
